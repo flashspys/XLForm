@@ -185,18 +185,18 @@
     NSDictionary * views = @{@"label": self.textLabel, @"textField": self.textField, @"image": self.imageView};
     if (self.imageView.image){
         if (self.textLabel.text.length > 0){
-            self.dynamicCustomConstraints = [NSLayoutConstraint constraintsWithVisualFormat:@"H:[image]-[label]-[textField]-4-|" options:0 metrics:0 views:views];
+            self.dynamicCustomConstraints = [NSLayoutConstraint constraintsWithVisualFormat:@"H:[image]-[label]-[textField]-16-|" options:0 metrics:0 views:views];
         }
         else{
-            self.dynamicCustomConstraints = [NSLayoutConstraint constraintsWithVisualFormat:@"H:[image]-[textField]-4-|" options:0 metrics:0 views:views];
+            self.dynamicCustomConstraints = [NSLayoutConstraint constraintsWithVisualFormat:@"H:[image]-[textField]-16-|" options:0 metrics:0 views:views];
         }
     }
     else{
         if (self.textLabel.text.length > 0){
-            self.dynamicCustomConstraints = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-16-[label]-[textField]-4-|" options:0 metrics:0 views:views];
+            self.dynamicCustomConstraints = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-16-[label]-[textField]-16-|" options:0 metrics:0 views:views];
         }
         else{
-            self.dynamicCustomConstraints = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-16-[textField]-4-|" options:0 metrics:0 views:views];
+            self.dynamicCustomConstraints = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-16-[textField]-16-|" options:0 metrics:0 views:views];
         }
     }
     [self.contentView addConstraints:self.dynamicCustomConstraints];
