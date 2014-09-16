@@ -65,7 +65,6 @@
     self.textField.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
     self.slider.value = [self.rowDescriptor.value floatValue];
     self.slider.enabled = !self.rowDescriptor.disabled;
-    self.textField.textColor  = self.rowDescriptor.disabled ? [UIColor grayColor] : [UIColor blackColor];
 	
     [self valueChanged:nil];
 }

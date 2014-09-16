@@ -63,7 +63,6 @@
     _leftButton.titleEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 15);
     
     [_leftButton setTitleColor:[UIColor colorWithRed:0.0 green:0.478431 blue:1.0 alpha:1.0] forState:UIControlStateNormal];
-    [_leftButton setTitleColor:[UIColor grayColor] forState:UIControlStateDisabled];
     [_leftButton setContentHuggingPriority:500 forAxis:UILayoutConstraintAxisHorizontal];
 
     return _leftButton;
